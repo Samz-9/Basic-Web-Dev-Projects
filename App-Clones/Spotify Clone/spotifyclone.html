@@ -1,0 +1,186 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>openspotify</title>
+    <link rel="stylesheet" href="spotify.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div><img class="logo" src="logo.svg" alt="logo"></div>
+        <div class="navcentre">
+            <div class="home"><img src="home.svg" alt="home">
+                <div class="homehover">Home</div>
+            </div>
+            <div class="search-container">
+                <div class="search">
+                    <img style="background-color: transparent;" src="search.svg" alt="">
+                    <div class="searchhover">Search</div>
+                </div>
+
+                <input type="text" placeholder="What do you want to play?" id="searchp">
+
+                <siv class="browse"><img style="background-color: transparent;" src="browse.svg" alt="browse">
+                    <div class="searchhover">Browse</div>
+            </div>
+        </div>
+        </div>
+        <div class="topr">
+            <div class="signup">Sign up</div>
+            <div class="login">Log in</div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="currentsong">
+            <div class="currentimg"><img class="coverimg" src="https://i.scdn.co/image/ab67616d0000b273373c63a4666fb7193febc167"
+             alt=""></div>
+             <div class="currname"></div>
+             <div class="currart"></div>
+            <div class="seekbar">
+                <div class="circle"></div>
+            </div>
+            <div class="currentinfos">
+            <div class="currdur currtime">00:00</div>
+                <div class="currdur totdur">00:00</div>
+            </div>
+            <div class="buttons">
+            
+                <svg id="prevbutton" xmlns="http://www.w3.org/2000/svg" width="50" height="50" style="background: transparent;" viewBox="0 0 90 100">
+                    
+                    <polygon points="35,30 35,70 5,50" fill="white" />
+                    <rect x="5" y="30" width="4" height="40" fill="white" />
+                </svg>
+                
+                <img src="pause.svg" alt="" id="pauseplaybutton">
+        
+            <svg id="nextbutton" xmlns="http://www.w3.org/2000/svg" width="50" height="50" style="background: transparent;" viewBox="0 0 90 100">
+            
+                <polygon points="55,30 55,70 85,50" fill="white" />
+                <rect x="85" y="30" width="4" height="40" fill="white" />
+                </svg>
+                
+                </div>
+                </div>
+        <div class="left">
+
+            <div class="libnav">
+                <img class="lib" src="library.svg" alt="library">
+                <div class="libtext ">Your Library</div>
+                <img class="plus" src="plus.svg" alt="add">
+            </div>
+            <div class="scroll">
+                <div class="createplaylist">
+                    <div class="c1">Create your first playlist</div>
+                    <div class="c2">It's easy,we'll help you</div>
+                    <div class="cbtn">Create playlist</div>
+                </div>
+                <div class="podc">
+                    <div class="p1">Let's find some podcasts to follow</div>
+                    <div class="p2">We'll keep you updated on new episodes</div>
+                    <div class="pbtn">Browse podcasts</div>
+                </div>
+            </div>
+            <div class="leftbar">
+                <div class="grid">
+                    <div class="tpbg">Legal</div>
+                    <div class="tpbg" style="grid-column: 2/4;">Safety&PrivacyCenter</div>
+                    <div class="tpbg">Privacy Policy</div>
+                    <div class="tpbg">Cookies</div>
+                    <div class="tpbg">About Ads</div>
+                    <div class="tpbg" style="grid-column: 1/4;">Accessibility</div>
+                    <div class="tpbg cookies">Cookies</div>
+                </div>
+                <div class="lang"> &#x1F310; ENGLISH </div>
+            </div>
+        </div>
+        <div class="right artscroll">
+            <ul class="pslist">
+                <li class="partist">Popular artists</li>
+                <li class="showall">Show all</li>
+            </ul>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab6761610000e5ebcb6926f44f620555ba444fca" alt="artist">
+                    <div class="artname">Pritam</div>
+                    <div class="arttext">Artist</div>
+                    <svg class="playb" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="#359733" />
+                        <polygon points="40,30 40,70 70,50" fill="black" />
+                    </svg>
+                </div>
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf7GUIz74yVcPigTNpt23cDHcewLb94-TkC3FUqU1EDCQzBKFi"
+                        alt="artist">
+                    <div class="artname">Arijit Singh</div>
+                    <div class="arttext">Artist</div>
+                    <svg class="playb" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="#359733" />
+                        <polygon points="40,30 40,70 70,50" fill="black" />
+                    </svg>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab6761610000e5ebc40600e02356cc86f0debe84" alt="artist">
+                    <div class="artname">Atif Aslam</div>
+                    <div class="arttext">Artist</div>
+                    <svg class="playb" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="#359733" />
+                        <polygon points="40,30 40,70 70,50" fill="black" />
+                    </svg>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab6761610000e5ebe672b5f553298dcdccb0e676" alt="artist">
+                    <div class="artname">Taylor Swift</div>
+                    <div class="arttext">Artist</div>
+                    <svg class="playb" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="#359733" />
+                        <polygon points="40,30 40,70 70,50" fill="black" />
+                    </svg>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab676161000051749e528993a2820267b97f6aae" alt="artist">
+                    <div class="artname">The Weeknd</div>
+                    <div class="arttext">Artist</div>
+                    <svg class="playb" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="#359733" />
+                        <polygon points="40,30 40,70 70,50" fill="black" />
+                    </svg>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab6761610000e5ebba50ca67ffc3097f6ea1710a" alt="artist">
+                    <div class="artname">Playboi Carti</div>
+                    <div class="arttext">Artist</div>
+                    <svg class="playb" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="#359733" />
+                        <polygon points="40,30 40,70 70,50" fill="black" />
+                    </svg>
+                </div>
+
+            </div>
+            <ul class="pslist">
+                <li class="partist">Popular albums and singles</li>
+                <li class="showall">Show all</li>
+            </ul>
+            <div class="singles">
+
+            </div>
+
+        </div>
+    </div>
+    <div class="adv">
+        <div class="advtext"> Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.
+        </div>
+        <div class="adbtn">
+            Sign up free
+        </div>
+    </div>
+    <script src="spotify.js"></script>
+</body>
+
+</html>
